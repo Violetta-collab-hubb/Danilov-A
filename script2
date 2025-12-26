@@ -1,0 +1,11 @@
+const button = document.getElementById('more-info-btn');
+const infoContainer = document.getElementById('info-container');
+
+// Обработчик события клик на кнопке
+button.addEventListener('click', function() {
+    // Отображаем контейнер с информацией
+    if (!infoContainer.style.display || infoContainer.style.display === 'none') {
+        infoContainer.innerHTML = '<p>Здесь ваша дополнительная информация.</p>';
+        infoContainer.style.display = 'block';
+    }
+});
